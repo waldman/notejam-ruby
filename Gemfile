@@ -35,6 +35,16 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.2'
 
+# Use Puma
+gem 'puma'
+
+# MySQL
+gem 'mysql2'
+
+# Log
+gem 'syslogger', '~> 1.6.0'
+gem 'lograge', '~> 0.3.1'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

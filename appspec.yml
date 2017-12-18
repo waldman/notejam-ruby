@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /srv/app
+permissions:
+  - object: /srv/app
+    owner: deployer
+    group: www-data
+hooks:
+  AfterInstall:
+    - location: script/AfterInstall.sh
+      runas: deployer
+  ApplicationStart:
+    - location: script/ApplicationStart.sh
+      runas: deployer
